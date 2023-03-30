@@ -9,6 +9,8 @@ const App = () => {
         const[city,setCity] = useState("chandigarh");
         
 
+
+
         const getCityData = async() => {
   
                 try{
@@ -18,8 +20,7 @@ const App = () => {
 
                     const ResponseJson = await response.json();    
                     
-                    
-
+                
                         setTempdata(ResponseJson.main);   
                 }
                     
